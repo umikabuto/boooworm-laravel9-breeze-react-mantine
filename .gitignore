@@ -6,7 +6,8 @@
 /vendor
 .env
 .env.backup
-.env.production
+.env.mysql
+.env.sqlite
 .phpunit.result.cache
 Homestead.json
 Homestead.yaml
@@ -16,3 +17,7 @@ yarn-error.log
 /.fleet
 /.idea
 /.vscode
+/.php-cs-fixer.cache
+/.phpstorm.meta.php
+/_ide_helper.php
+/_ide_helper_models.php
