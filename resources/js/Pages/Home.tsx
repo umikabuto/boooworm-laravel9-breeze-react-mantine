@@ -1,15 +1,12 @@
 import React from 'react';
-import AdminLayout from '@/Layouts/AdminLayout';
+import GuestLayout from '@/Layouts/GuestLayout';
 import { Head } from '@inertiajs/inertia-react';
 
-export default function Dashboard(props) {
+export default function Home() {
     return (
-        <AuthenticatedLayout
-            auth={props.auth}
-            errors={props.errors}
-            header={<h2 className="font-semibold text-xl text-gray-800 leading-tight">Dashboard</h2>}
+        <GuestLayout
         >
-            <Head title="Dashboard" />
+            <Head title="Home"></Head>
 
             <div className="py-12">
                 <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
@@ -18,6 +15,6 @@ export default function Dashboard(props) {
                     </div>
                 </div>
             </div>
-        </AuthenticatedLayout>
+        </GuestLayout>
     );
 }
